@@ -1,0 +1,56 @@
+.container {
+	display: flex;
+	justify-content: flex-end;
+	height: 50px;
+	background: rgb(255,102,0);
+	background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(155,13,172,1) 100%);
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 3px 0 7px black;
+
+	.title {
+		font-weight: 700;
+		padding-left: 15px;
+	}
+
+	.messagebox {
+		.box {
+			margin: 0 5px;
+			border: none;
+			background-color: rgba(white, 0.2);
+			cursor: pointer;
+			border-radius: 10px;
+
+			&:hover {
+				color: #555555;
+			}
+
+			&:focus {
+				font-weight: 600;
+				background-color: rgba(black, 0.2);
+			}
+		}
+	}
+
+	.active {
+		font-weight: 600;
+	}
+
+	.userInfo {
+		padding-right: 15px;
+		display: flex;
+		.userName {
+			color: red;
+		}
+
+		.userControl {
+			button {
+				background-color: transparent;
+				border: none;
+				text-decoration: underline;
+				cursor: pointer;
+				color: white;
+			}
+		}
+	}
+}

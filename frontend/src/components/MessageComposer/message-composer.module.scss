@@ -1,0 +1,65 @@
+.container {
+	height: 100px;
+
+	.header {
+		padding: 5px;
+		display: flex;
+		.donor, .recipient {
+			display: flex;
+		}
+
+		.label {
+			font-size: 12px;
+			width: 55px;
+			text-align: right;
+			padding: 0 5px;
+			align-self: center;
+			color: white;
+		}
+
+		input {
+			padding: 5px 10px;
+			border: none;
+			background-color: #EEEEEE;
+			border-radius: 15px;
+
+			&:focus {
+				outline: none;
+				background-color: rgba(white, 0.5);
+			}
+		}
+	}
+
+	.content {
+		display: flex;
+		padding: 5px;
+
+		input {
+			border-radius: 15px;
+			padding: 10px;
+			border: none;
+			background-color: #EEEEEE;
+			width: -webkit-fill-available;
+
+			&:focus {
+				outline: none;
+				background-color: rgba(white, 0.5);
+			}
+		}
+
+		button {
+			border: 1px solid #DDDDDD;
+			border-radius: 10px;
+			cursor: pointer;
+			margin-left: 5px;
+
+			&:hover {
+				background-color: #E5E5E5;
+			}
+
+			&:active {
+				background-color: #DDDDDD;
+			}
+		}
+	}
+}

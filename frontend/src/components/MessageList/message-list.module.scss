@@ -1,0 +1,72 @@
+.container {
+	margin-left: 20px;
+	height: calc(100vh - 130px);
+	width: calc(100vw - 320px);
+	border-radius: 10px;
+	background-color: rgba($color: #555555, $alpha: 0.3);
+
+	.messageContainer {
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		height: calc(100vh - 250px);
+		overflow-y: scroll;
+
+		.messageWrapper {
+			border: 1px solid black;
+			width: fit-content;
+			max-width: 70%;
+			border: none;
+			border-radius: 10px;
+			padding: 10px;
+			margin: 5px;
+			color: white;
+			// display: flex;
+
+			p {
+				margin: 0;
+			}
+
+			.title {
+				text-align: left;
+				font-weight: 700;
+				padding-right: 10px;
+				border-bottom: 1px solid rgba($color: pink, $alpha: 0.2);
+			}
+
+			.body {
+				text-align: left;
+				color: white;
+			}
+			.controls{
+				display: flex;
+				justify-content: flex-end;
+				img {
+					cursor: pointer;
+					padding: 2px;
+
+					&:hover {
+						width: 17px;
+						padding: 1px;
+					}
+
+					&:active {
+						width: 16px;
+						padding: 1.5px;
+					}
+				}
+			}
+		}
+
+		.sent {
+			align-self: flex-end;
+			background-color: rgba(green, 0.5);
+			box-shadow: 1px 1px 2px black;
+		}
+
+		.receive {
+			background-color: rgba(red, 0.5);
+			box-shadow: 1px 1px 2px black;
+		}
+	}
+}
